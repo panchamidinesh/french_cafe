@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content= "width=device-width, initial-scale=1" /> 
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body style="background-color:#FDF5E6;">
+  <header>
+    <h1>The French Beanery</h1>
+    <nav>
+      <ul>
+        <li><a href="menu.html">Menu | </a></li>
+        <li><a href="#about">About Us | </a></li>
+        <li><a href="#contact">Contact | </a></li>
+		<li><a href="res.html">Reservations | </a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <style>
+	
+	
+	#ht{
+	font-size: 30px;
+	}
+	
+	#scroll-container{
+	width: 30%;
+	height: 30%;
+	}
+	
+	#contact{
+	font-size:25px;
+	}
+	
+	#about{
+	font-size:25px;
+	}
+	
+	
+	</style>
+  <br>
+  
+  
+
+       <marquee width:"100%"  scrollamount="9"
+	   id="ht">
+	  --  Authentic french cafe -- live music -- exciting in dining offers -- 12% off above 499rs -- Baked to perfection -- Authentic french cafe -- live music -- exciting in dining offers -- 12% off above 499rs
+	  </marquee>
+	  <br>
+	  <br>
+	  <br>
+	  
+	  <div class="slideshow-container">
+
+  <!--  code for the image slider -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="frenchcafe.png" style="width:100%">
+    <div class="text">Cafe</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="interior.png" style="width:100%">
+    <div class="text">Interior</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="plates.png" style="width:100%">
+    <div class="text">Dining</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="tiramisu.png" style="width:100%">
+    <div class="text">tiramisu</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="crossinet.png" style="width:100%">
+    <div class="text">croissants</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="hotchocolate.png" style="width:100%">
+    <div class="text">hot chocolate</div>
+  </div>
+
+  <!--Code for : Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles below the image -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); //   Changes image every 2 seconds
+}
+</script>
+
+
+      <section id="about">
+     <center> <h2>About Us</h2></center>
+     <center> <p><em>Welcome to our restaurant! We pride ourselves on serving delicious authentic french food.
+	  "Welcome to The French Beanary Café , a charming corner of France nestled in the heart of Banglore. Our café embodies the essence of French culture,<br> offering a delightful blend of rich aromas, exquisite flavors, and a warm, inviting ambiance.<br>
+
+At The French Beanary Café , we pride ourselves on serving authentic French delicacies, from freshly baked croissants and fluffy pastries  and artisanal coffee brewed to perfection. <br>Each dish is crafted with care, honoring traditional recipes passed down through generations.<br>
+
+Our cozy café provides a serene escape where patrons can savor the art of French gastronomy while immersing themselves in the rustic elegance of French décor.<br> Whether you're seeking a leisurely breakfast, a quick espresso, or a leisurely afternoon with friends,<br> The French Beanary Café  invites you to experience the charm and taste of France right here in Banglore.<br>
+</em></p><center>
+    </section>
+	<br>
+
+    <section id="contact">
+     <center> <h2>Contact</h2></center>
+     <center> <p>For reservations, please call: 123-456-7890 / book online</p></center>
+    </section>
+  </main>
+
+  <footer>
+ 
+  <ul class="social-icons">
+    <li><a href="https://www.facebook.com"><img src="fb.png" alt="Facebook"></a></li>
+    <li><a href="https://www.twitter.com"><img src="twi.png" alt="Twitter"></a></li>
+    <li><a href="https://www.instagram.com"><img src="insta.png" alt="Instagram"></a></li>
+    <!-- Add more social media icons as needed -->
+  </ul>
+
+    <p>&copy; 2023 The French Beanery. All Rights Reserved.</p>
+  </footer>
+
+
+</body>
+</html>

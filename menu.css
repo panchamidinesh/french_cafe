@@ -1,0 +1,54 @@
+/* General styles */
+body {
+  font-family: Lucida Calligraphy, sans-serif;
+  
+}
+
+header {
+  background-color: #BC8F8F;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+nav a{
+	color: white;
+}
+
+.menu-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.menu-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.menu-item h3 {
+  margin: 5px 0;
+  text-align: center;
+  
+}
+
+.menu-item span {
+  float: right;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #BC8F8F;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
